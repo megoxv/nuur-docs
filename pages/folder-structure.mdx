@@ -1,0 +1,66 @@
+# Folder Structure
+
+Nuur comes with a flexible file structure that can be easily used for small to large scope projects. This section will explain the entire file structure and how to adapt it to your project.
+
+##  Root Folder
+
+`[root_folder]` folder contains the whole project folders & files
+
+| File/Directory | Description                                                                 |
+| -------------- | --------------------------------------------------------------------------- |
+| .next          | Auto-generated directory containing build-related files and assets.         |
+| components     | Directory for storing reusable React components used across multiple pages. |
+| lib            | A place for utility functions or code that doesn't fit elsewhere.           |
+| pages          | The heart of Next.js, containing route and page definitions.                |
+| public         | For serving static assets like images, fonts, and other files.              |
+| styles         | Location for global CSS styles, SCSS, or CSS modules.                       |
+| .env           | File for storing environment variables used in your application.            |
+| .eslintrc.json | Configuration file for ESLint, used for code linting rules.                 |
+| next.config.js | Configuration file to customize your Next.js application.                   |
+| package.json   | File containing project information, dependencies, and scripts for tasks.   |
+
+## Pages Folder
+
+`[root_folder]/pages` folder contains template pages files.
+
+`/api`
+
+&#x20;      `contact.js`
+
+`/blog`
+
+&#x20;       `[slug].jsx`
+
+`/pages`
+
+&#x20;       `...`
+
+`/portfolio`
+
+&#x20;       `[slug].jsx`
+
+`/index.js`
+
+`...`
+
+##  Components Folder
+
+`[root_folder]/components` folder contains template components that imported and used in pages.
+
+`/About`
+
+&#x20;        `About.jsx`          `//= Architecture Style About Component` &#x20;
+
+&#x20;       `AboutData.jsx `          `//= Architecture About Data`
+
+&#x20;      `...`
+
+`/Blog`
+
+&#x20;        `Blog.jsx`          `//= Architecture Style Blog Component` &#x20;
+
+&#x20;       `BlogData.jsx`           `//= Architecture Blog Data`
+
+&#x20;      `...`
+
+`...`
